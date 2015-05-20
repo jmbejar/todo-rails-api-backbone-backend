@@ -17,6 +17,8 @@ gem 'sqlite3'
 # Use ActiveModelSerializers to serialize JSON responses
 gem 'active_model_serializers', '~> 0.10.0.rc1'
 
+gem 'rack-cors', '0.3.0'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
