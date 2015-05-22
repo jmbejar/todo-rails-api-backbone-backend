@@ -1,5 +1,9 @@
 <h3>Unsubscribe form</h3>
 
+<% if @error %>
+  <p style="color:red;"><%= @error %></p>
+<% end %>
+
 <%= form_for([:unsubscribe, Subscriptor.new]) do |f| %>
   <div class="field">
     <%= f.label :email %><br>
