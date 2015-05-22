@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  resources :subscriptors do
+    collection do
+      get :unsubscribe_form
+      post :unsubscribe
+    end
+  end
+
   resources :todos
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

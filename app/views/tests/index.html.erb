@@ -1,0 +1,13 @@
+Hello from a view
+
+TODO list index url <%= todos_url %>
+
+<%= form_for(Todo.new) do |f| %>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,11 @@
+<h3>Unsubscribe form</h3>
+
+<%= form_for([:unsubscribe, Subscriptor.new]) do |f| %>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
