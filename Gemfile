@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'rails', github: 'spastorino/rails', branch: 'rails-api'
+gem 'arel', github: 'rails/arel'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.0.0.alpha'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use ActiveModel has_secure_password
